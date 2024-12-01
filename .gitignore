@@ -1,0 +1,4 @@
+.DS_Store
+inputs/*.txt
+extras/*.txt
+extras/*.png
