@@ -1,3 +1,4 @@
+from math import ceil, log10
 from time import time
 
 DAY = 7
@@ -22,7 +23,10 @@ def solutions2(
             solutions2(target, operands, total + operands[i], i+1)
             + solutions2(target, operands, total * operands[i], i+1)
             + solutions2(
-                target, operands, int(str(total) + str(operands[i])), i+1)
+                target, operands,
+                (total * 10**ceil(log10(operands[i]+1))) + operands[i],
+                i+1
+            )
         )
     else:
         return total == target
