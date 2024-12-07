@@ -161,7 +161,6 @@ def part2(input: str) -> int:
     for o in obstacles:
         # Update map in place then restore to original state instead of copying
         # Small optimisation that saves ~0.5s
-        # index = o[1] * size[0] + o[0]
         original = map[o[1]][o[0]]
         map[o[1]][o[0]] = "#"
         _, has_loop = walk(map, size, position, direction)
