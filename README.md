@@ -1,3 +1,7 @@
-# Advent of Code 2024
+# Advent of Code in Python
 
-Advent of Code 2024
+Puzzle solutions for [Advent of Code](https://adventofcode.com/) in Python.
+
+## Years
+
+- [2024](./2024)
