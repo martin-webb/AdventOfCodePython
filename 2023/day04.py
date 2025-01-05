@@ -1,6 +1,7 @@
 from dataclasses import dataclass
 from time import time
 
+YEAR = 2023
 DAY = 4
 NAME = "Scratchcards"
 

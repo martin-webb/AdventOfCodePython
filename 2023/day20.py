@@ -5,6 +5,7 @@ from math import lcm
 from time import time
 from typing import cast
 
+YEAR = 2023
 DAY = 20
 NAME = "Pulse Propagation"
 

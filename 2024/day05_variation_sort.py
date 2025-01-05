@@ -2,6 +2,7 @@ from functools import cmp_to_key
 from math import floor
 from time import time
 
+YEAR = 2024
 DAY = 5
 NAME = "Print Queue"
 

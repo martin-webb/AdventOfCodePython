@@ -3,6 +3,7 @@ from itertools import combinations
 from time import time
 from typing import cast
 
+YEAR = 2024
 DAY = 23
 NAME = "LAN Party"
 

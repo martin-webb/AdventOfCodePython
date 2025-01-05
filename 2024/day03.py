@@ -1,6 +1,7 @@
 import re
 from time import time
 
+YEAR = 2024
 DAY = 3
 NAME = "Mull It Over"
 

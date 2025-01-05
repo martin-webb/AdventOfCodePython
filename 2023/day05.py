@@ -3,6 +3,7 @@ from dataclasses import dataclass
 import sys
 from time import time
 
+YEAR = 2023
 DAY = 5
 NAME = "If You Give A Seed A Fertilizer"
 

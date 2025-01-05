@@ -3,6 +3,7 @@ from dataclasses import dataclass, field
 from time import time
 from typing import Generator
 
+YEAR = 2023
 DAY = 3
 NAME = "Gear Ratios"
 

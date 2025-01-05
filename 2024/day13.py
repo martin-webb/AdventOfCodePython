@@ -2,6 +2,7 @@ from math import floor
 from time import time
 from typing import Optional
 
+YEAR = 2024
 DAY = 13
 NAME = "Claw Contraption"
 

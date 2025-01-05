@@ -1,5 +1,6 @@
 from time import time
 
+YEAR = 2024
 DAY = 17
 NAME = "Chronospatial Computer"
 

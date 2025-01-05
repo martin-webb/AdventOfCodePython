@@ -1,6 +1,7 @@
 from math import ceil, log10
 from time import time
 
+YEAR = 2024
 DAY = 7
 NAME = "Bridge Repair"
 

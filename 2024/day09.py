@@ -3,6 +3,7 @@ import heapq
 from time import time
 from typing import Optional
 
+YEAR = 2024
 DAY = 9
 NAME = "Disk Fragmenter"
 

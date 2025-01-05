@@ -2,6 +2,7 @@ from functools import cache
 from math import ceil, floor, log10
 from time import time
 
+YEAR = 2024
 DAY = 11
 NAME = "Plutonian Pebbles"
 

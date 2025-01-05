@@ -2,6 +2,7 @@ from itertools import cycle
 from math import lcm
 from time import time
 
+YEAR = 2023
 DAY = 8
 NAME = "Haunted Wasteland"
 

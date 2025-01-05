@@ -2,6 +2,7 @@ from collections import defaultdict
 from dataclasses import dataclass
 from time import time
 
+YEAR = 2024
 DAY = 12
 NAME = "Garden Groups"
 

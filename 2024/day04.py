@@ -1,5 +1,6 @@
 from time import time
 
+YEAR = 2024
 DAY = 4
 NAME = "Ceres Search"
 

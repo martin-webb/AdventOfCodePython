@@ -1,6 +1,7 @@
 from itertools import product
 from time import time
 
+YEAR = 2024
 DAY = 25
 NAME = "Code Chronicle"
 

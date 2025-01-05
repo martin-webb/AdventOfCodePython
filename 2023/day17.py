@@ -4,6 +4,7 @@ from heapq import heappop, heappush
 from typing import Optional
 from time import time
 
+YEAR = 2023
 DAY = 17
 NAME = "Clumsy Crucible"
 

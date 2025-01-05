@@ -4,6 +4,7 @@ import heapq
 from time import time
 from typing import Optional
 
+YEAR = 2024
 DAY = 16
 NAME = "Reindeer Maze"
 

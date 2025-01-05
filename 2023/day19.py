@@ -3,6 +3,7 @@ from functools import partial
 from time import time
 from typing import Callable, Optional
 
+YEAR = 2023
 DAY = 19
 NAME = "Aplenty"
 

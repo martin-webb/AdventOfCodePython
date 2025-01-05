@@ -1,6 +1,7 @@
 from functools import cache
 from time import time
 
+YEAR = 2023
 DAY = 12
 NAME = "Hot Springs"
 

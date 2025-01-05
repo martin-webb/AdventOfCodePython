@@ -5,6 +5,7 @@ from typing import Callable, Optional, Union, cast
 from itertools import permutations
 from time import time
 
+YEAR = 2024
 DAY = 24
 NAME = "Crossed Wires"
 

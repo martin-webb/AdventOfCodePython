@@ -1,6 +1,7 @@
 from itertools import combinations
 from time import time
 
+YEAR = 2023
 DAY = 11
 NAME = "Cosmic Expansion"
 

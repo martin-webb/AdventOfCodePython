@@ -4,6 +4,7 @@ from math import ceil
 from time import time
 from typing import cast
 
+YEAR = 2024
 DAY = 14
 NAME = "Restroom Redoubt"
 

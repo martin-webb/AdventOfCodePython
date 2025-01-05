@@ -1,6 +1,7 @@
 from time import time
 from typing import Generator, Optional
 
+YEAR = 2023
 DAY = 13
 NAME = "Point of Incidence"
 
