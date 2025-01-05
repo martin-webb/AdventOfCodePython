@@ -2,6 +2,7 @@ from dataclasses import dataclass
 from time import time
 from typing import Any, Optional
 
+YEAR = 2024
 DAY = 15
 NAME = "Warehouse Woes"
 

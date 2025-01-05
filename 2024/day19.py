@@ -1,6 +1,7 @@
 from functools import cache
 from time import time
 
+YEAR = 2024
 DAY = 19
 NAME = "Linen Layout"
 

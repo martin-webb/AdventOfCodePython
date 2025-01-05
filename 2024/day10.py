@@ -1,6 +1,7 @@
 from collections import defaultdict
 from time import time
 
+YEAR = 2024
 DAY = 10
 NAME = "Hoof It"
 

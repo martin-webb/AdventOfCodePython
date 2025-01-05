@@ -1,6 +1,7 @@
 from copy import copy
 from time import time
 
+YEAR = 2023
 DAY = 10
 NAME = "Pipe Maze"
 

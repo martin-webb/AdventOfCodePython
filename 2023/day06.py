@@ -1,5 +1,6 @@
 from time import time
 
+YEAR = 2023
 DAY = 6
 NAME = "Wait For It"
 

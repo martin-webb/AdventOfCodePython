@@ -4,6 +4,7 @@ from functools import cache
 from time import time
 from typing import Optional
 
+YEAR = 2023
 DAY = 14
 NAME = "Parabolic Reflector Dish"
 

@@ -4,6 +4,7 @@ from dataclasses import dataclass
 import random
 from time import time
 
+YEAR = 2023
 DAY = 25
 NAME = "Snowverload"
 

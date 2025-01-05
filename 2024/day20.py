@@ -4,6 +4,7 @@ from functools import partial
 from itertools import permutations
 from time import time
 
+YEAR = 2024
 DAY = 20
 NAME = "Race Condition"
 

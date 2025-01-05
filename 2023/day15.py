@@ -1,6 +1,7 @@
 from collections import defaultdict
 from time import time
 
+YEAR = 2023
 DAY = 15
 NAME = "Lens Library"
 

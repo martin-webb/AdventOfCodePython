@@ -2,6 +2,7 @@ from collections import defaultdict
 from itertools import combinations
 from time import time
 
+YEAR = 2024
 DAY = 8
 NAME = "Resonant Collinearity"
 

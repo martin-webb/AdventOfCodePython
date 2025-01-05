@@ -1,6 +1,7 @@
 from collections import defaultdict, deque
 from time import time
 
+YEAR = 2024
 DAY = 22
 NAME = "Monkey Market"
 

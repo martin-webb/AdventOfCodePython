@@ -1,6 +1,7 @@
 from collections import Counter
 from time import time
 
+YEAR = 2023
 DAY = 7
 NAME = "Camel Cards"
 

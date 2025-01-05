@@ -1,6 +1,7 @@
 import re
 from time import time
 
+YEAR = 2023
 DAY = 1
 NAME = "Trebuchet?!"
 

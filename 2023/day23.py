@@ -2,6 +2,7 @@ from dataclasses import dataclass, field
 from time import time
 from typing import Optional
 
+YEAR = 2023
 DAY = 23
 NAME = "A Long Walk"
 

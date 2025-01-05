@@ -2,6 +2,7 @@ from collections import defaultdict
 from time import time
 from typing import Optional
 
+YEAR = 2024
 DAY = 6
 NAME = "Guard Gallivant"
 

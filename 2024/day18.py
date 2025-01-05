@@ -2,6 +2,7 @@ from collections import deque
 from functools import partial
 from time import time
 
+YEAR = 2024
 DAY = 18
 NAME = "RAM Run"
 

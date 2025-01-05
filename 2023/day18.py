@@ -2,6 +2,7 @@ from dataclasses import dataclass
 from time import time
 from typing import Optional
 
+YEAR = 2023
 DAY = 18
 NAME = "Lavaduct Lagoon"
 

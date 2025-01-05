@@ -4,6 +4,7 @@ from functools import partial
 from math import floor
 from time import time
 
+YEAR = 2023
 DAY = 21
 NAME = "Step Counter"
 

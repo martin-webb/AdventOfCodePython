@@ -1,6 +1,7 @@
 from collections import Counter
 from time import time
 
+YEAR = 2024
 DAY = 1
 NAME = "Historian Hysteria"
 

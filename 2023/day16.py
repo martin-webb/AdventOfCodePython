@@ -2,6 +2,7 @@ from collections import namedtuple
 from time import time
 from typing import Optional
 
+YEAR = 2023
 DAY = 16
 NAME = "The Floor Will Be Lava"
 

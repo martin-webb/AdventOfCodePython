@@ -2,6 +2,7 @@ from collections import defaultdict, deque
 from dataclasses import dataclass, field
 from time import time
 
+YEAR = 2023
 DAY = 22
 NAME = "Sand Slabs"
 

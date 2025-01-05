@@ -2,6 +2,7 @@ from collections import defaultdict, deque
 from math import floor
 from time import time
 
+YEAR = 2024
 DAY = 5
 NAME = "Print Queue"
 

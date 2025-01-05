@@ -6,6 +6,7 @@ import math
 from time import time
 from typing import Optional
 
+YEAR = 2023
 DAY = 24
 NAME = "Never Tell Me The Odds"
 
