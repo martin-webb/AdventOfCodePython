@@ -4,5 +4,5 @@ Puzzle solutions for [Advent of Code](https://adventofcode.com/) in Python.
 
 ## Years
 
-- [2023](2023)
-- [2024](2024)
+- [2023](https://adventofcode.com/2023)
+- [2024](https://adventofcode.com/2024)
