@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "adventofcode2024"
+name = "AdventOfCodePython"
 version = "0.1.0"
 description = ""
 authors = ["Martin Webb <martindanielwebb@gmail.com>"]
