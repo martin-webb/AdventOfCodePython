@@ -40,12 +40,6 @@ class Graph:
         self.edges[edge.begin].append(edge)
 
 
-@dataclass
-class Path:
-    distance: int
-    visited: set[Point]
-
-
 def find_start_and_end_points(grid: dict[Point, str]) -> tuple[Point, Point]:
     """
     Find the start and end points in the map in the top and bottom rows.
