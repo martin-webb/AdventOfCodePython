@@ -1,5 +1,6 @@
 from collections import deque
 from dataclasses import dataclass
+from pathlib import Path
 import sys
 from time import time
 
@@ -136,7 +137,8 @@ def main() -> None:
         ("Part 2", "inputs/day05_example.txt", part2, 46),
         ("Part 2", "inputs/day05_full.txt", part2, 79004094),
     ):
-        with open(filename) as f:
+        path = Path(__file__).parent / filename
+        with open(path) as f:
             contents = f.read()
 
         t1 = time()

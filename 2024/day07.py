@@ -1,4 +1,5 @@
 from math import ceil, log10
+from pathlib import Path
 from time import time
 
 YEAR = 2024
@@ -66,7 +67,8 @@ def main() -> None:
         ("Part 2", "inputs/day07_example.txt", part2, 11387),
         ("Part 2", "inputs/day07_full.txt", part2, 96779702119491),
     ):
-        with open(filename) as f:
+        path = Path(__file__).parent / filename
+        with open(path) as f:
             contents = f.read()
 
         t1 = time()

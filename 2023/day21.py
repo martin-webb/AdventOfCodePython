@@ -1,6 +1,7 @@
 from collections import deque
 from dataclasses import dataclass
 from functools import partial
+from pathlib import Path
 from math import floor
 from time import time
 
@@ -221,7 +222,8 @@ def main() -> None:
         ("Part 2", "inputs/day21_full.txt",
          partial(part2, target_distance=26501365), 616583483179597),
     ):
-        with open(filename) as f:
+        path = Path(__file__).parent / filename
+        with open(path) as f:
             contents = f.read()
 
         t1 = time()

@@ -1,4 +1,5 @@
 from functools import cache
+from pathlib import Path
 from time import time
 
 YEAR = 2024
@@ -50,7 +51,8 @@ def main() -> None:
         ("Part 2", "inputs/day19_example.txt", part2, 16),
         ("Part 2", "inputs/day19_full.txt", part2, 678536865274732),
     ):
-        with open(filename) as f:
+        path = Path(__file__).parent / filename
+        with open(path) as f:
             contents = f.read()
 
         # Different inputs and puzzle parts should not interfere (in order to

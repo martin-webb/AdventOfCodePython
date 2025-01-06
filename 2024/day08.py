@@ -1,5 +1,6 @@
 from collections import defaultdict
 from itertools import combinations
+from pathlib import Path
 from time import time
 
 YEAR = 2024
@@ -119,7 +120,8 @@ def main() -> None:
         ("Part 2", "inputs/day08_example.txt", part2, 34),
         ("Part 2", "inputs/day08_full.txt", part2, 1285),
     ):
-        with open(filename) as f:
+        path = Path(__file__).parent / filename
+        with open(path) as f:
             contents = f.read()
 
         t1 = time()

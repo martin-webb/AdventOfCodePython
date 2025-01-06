@@ -1,5 +1,6 @@
 from functools import cmp_to_key
 from math import floor
+from pathlib import Path
 from time import time
 
 YEAR = 2024
@@ -69,7 +70,8 @@ def main() -> None:
         ("Part 2", "inputs/day05_example.txt", part2, 123),
         ("Part 2", "inputs/day05_full.txt", part2, 6767),
     ):
-        with open(filename) as f:
+        path = Path(__file__).parent / filename
+        with open(path) as f:
             contents = f.read()
 
         t1 = time()

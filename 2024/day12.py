@@ -1,5 +1,6 @@
 from collections import defaultdict
 from dataclasses import dataclass
+from pathlib import Path
 from time import time
 
 YEAR = 2024
@@ -212,7 +213,8 @@ def main() -> None:
         ("Part 2", "inputs/day12_example3.txt", part2, 1206),
         ("Part 2", "inputs/day12_full.txt", part2, 858684),
     ):
-        with open(filename) as f:
+        path = Path(__file__).parent / filename
+        with open(path) as f:
             contents = f.read()
 
         t1 = time()

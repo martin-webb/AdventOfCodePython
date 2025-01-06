@@ -1,4 +1,5 @@
 from dataclasses import dataclass, field
+from pathlib import Path
 from time import time
 from typing import Optional
 
@@ -334,7 +335,8 @@ def main() -> None:
         ("Part 2", "inputs/day23_example.txt", part2, 154),
         ("Part 2", "inputs/day23_full.txt", part2, 6710),
     ):
-        with open(filename) as f:
+        path = Path(__file__).parent / filename
+        with open(path) as f:
             contents = f.read()
 
         t1 = time()

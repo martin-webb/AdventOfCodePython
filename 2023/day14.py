@@ -1,6 +1,7 @@
 from collections import Counter
 from dataclasses import dataclass
 from functools import cache
+from pathlib import Path
 from time import time
 from typing import Optional
 
@@ -157,7 +158,8 @@ def main() -> None:
         ("Part 2", "inputs/day14_example.txt", part2, 64),
         ("Part 2", "inputs/day14_full.txt", part2, 106689),
     ):
-        with open(filename) as f:
+        path = Path(__file__).parent / filename
+        with open(path) as f:
             contents = f.read()
 
         t1 = time()

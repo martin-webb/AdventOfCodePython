@@ -1,6 +1,7 @@
 from collections import defaultdict
 from dataclasses import dataclass, field
 from heapq import heappop, heappush
+from pathlib import Path
 from typing import Optional
 from time import time
 
@@ -260,7 +261,8 @@ def main() -> None:
         ("Part 2", "inputs/day17_example_part2_extra.txt", part2, 71),
         ("Part 2", "inputs/day17_full.txt", part2, 1017),
     ):
-        with open(filename) as f:
+        path = Path(__file__).parent / filename
+        with open(path) as f:
             contents = f.read()
 
         t1 = time()

@@ -1,4 +1,5 @@
 from collections import Counter
+from pathlib import Path
 from time import time
 
 YEAR = 2024
@@ -47,7 +48,8 @@ def main() -> None:
         ("Part 2", "inputs/day01_example.txt", part2, 31),
         ("Part 2", "inputs/day01_full.txt", part2, 21790168),
     ):
-        with open(filename) as f:
+        path = Path(__file__).parent / filename
+        with open(path) as f:
             contents = f.read()
 
         t1 = time()

@@ -2,6 +2,7 @@ from copy import deepcopy
 from collections import defaultdict, deque
 from dataclasses import dataclass
 import random
+from pathlib import Path
 from time import time
 
 YEAR = 2023
@@ -132,7 +133,8 @@ def main() -> None:
         ("Part 1", "inputs/day25_example.txt", part1, 54),
         ("Part 1", "inputs/day25_full.txt", part1, 598120),
     ):
-        with open(filename) as f:
+        path = Path(__file__).parent / filename
+        with open(path) as f:
             contents = f.read()
 
         t1 = time()
