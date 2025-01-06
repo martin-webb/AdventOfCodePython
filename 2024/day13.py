@@ -1,4 +1,5 @@
 from math import floor
+from pathlib import Path
 from time import time
 from typing import Optional
 
@@ -90,7 +91,8 @@ def main() -> None:
         ("Part 1", "inputs/day13_full.txt", part1, 35997),
         ("Part 2", "inputs/day13_full.txt", part2, 82510994362072),
     ):
-        with open(filename) as f:
+        path = Path(__file__).parent / filename
+        with open(path) as f:
             contents = f.read()
 
         t1 = time()

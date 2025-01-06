@@ -3,6 +3,7 @@ from dataclasses import dataclass
 from functools import partial
 from itertools import combinations
 import math
+from pathlib import Path
 from time import time
 from typing import Optional
 
@@ -314,7 +315,8 @@ def main() -> None:
         ("Part 2", "inputs/day24_example.txt", part2, 47),
         ("Part 2", "inputs/day24_full.txt", part2, 558415252330828),
     ):
-        with open(filename) as f:
+        path = Path(__file__).parent / filename
+        with open(path) as f:
             contents = f.read()
 
         t1 = time()

@@ -1,5 +1,6 @@
 from functools import cache
 from math import ceil, floor, log10
+from pathlib import Path
 from time import time
 
 YEAR = 2024
@@ -48,7 +49,8 @@ def main() -> None:
         ("Part 1", "inputs/day11_full.txt", part1, 228668),
         ("Part 2", "inputs/day11_full.txt", part2, 270673834779359),
     ):
-        with open(filename) as f:
+        path = Path(__file__).parent / filename
+        with open(path) as f:
             contents = f.read()
 
         t1 = time()

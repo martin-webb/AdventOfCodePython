@@ -2,6 +2,7 @@ from collections import deque
 from dataclasses import dataclass
 from functools import partial
 from itertools import permutations
+from pathlib import Path
 from time import time
 
 YEAR = 2024
@@ -167,7 +168,8 @@ def main() -> None:
         ("Part 2", "inputs/day20_full.txt",
          partial(part2, min_saving=100), 1005856),
     ):
-        with open(filename) as f:
+        path = Path(__file__).parent / filename
+        with open(path) as f:
             contents = f.read()
 
         t1 = time()

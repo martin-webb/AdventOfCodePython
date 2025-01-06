@@ -1,4 +1,5 @@
 from collections import namedtuple
+from pathlib import Path
 from time import time
 from typing import Optional
 
@@ -144,7 +145,8 @@ def main() -> None:
         ("Part 2", "inputs/day16_example.txt", part2, 51),
         ("Part 2", "inputs/day16_full.txt", part2, 8244),
     ):
-        with open(filename) as f:
+        path = Path(__file__).parent / filename
+        with open(path) as f:
             contents = f.read()
 
         t1 = time()

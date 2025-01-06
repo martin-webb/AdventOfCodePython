@@ -1,6 +1,7 @@
 from collections import defaultdict
 from functools import partial
 from math import ceil
+from pathlib import Path
 from time import time
 from typing import cast
 
@@ -139,7 +140,8 @@ def main() -> None:
          partial(part2, width=101, height=103,
                  grid_width=3, grid_height=3, difference_threshold=450), 6512),
     ):
-        with open(filename) as f:
+        path = Path(__file__).parent / filename
+        with open(path) as f:
             contents = f.read()
 
         t1 = time()

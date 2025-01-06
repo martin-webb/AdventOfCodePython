@@ -1,5 +1,6 @@
 from collections import defaultdict, deque
 from itertools import combinations
+from pathlib import Path
 from time import time
 from typing import cast
 
@@ -91,7 +92,8 @@ def main() -> None:
         ("Part 2", "inputs/day23_full.txt", part2,
          "ah,ap,ek,fj,fr,jt,ka,ln,me,mp,qa,ql,zg"),
     ):
-        with open(filename) as f:
+        path = Path(__file__).parent / filename
+        with open(path) as f:
             contents = f.read()
 
         t1 = time()

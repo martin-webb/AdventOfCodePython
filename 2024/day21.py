@@ -3,6 +3,7 @@ from io import StringIO
 from dataclasses import dataclass
 from functools import cache
 from itertools import permutations
+from pathlib import Path
 from time import time
 
 YEAR = 2024
@@ -291,7 +292,8 @@ def main() -> None:
         ("Part 1", "inputs/day21_full.txt", part1, 163920),
         ("Part 2", "inputs/day21_full.txt", part2, 204040805018350),
     ):
-        with open(filename) as f:
+        path = Path(__file__).parent / filename
+        with open(path) as f:
             contents = f.read()
 
         # Different inputs and puzzle parts should not interfere (in order to

@@ -2,6 +2,7 @@ from __future__ import annotations
 from collections import Counter, OrderedDict, defaultdict, deque
 from dataclasses import dataclass
 from math import lcm
+from pathlib import Path
 from time import time
 from typing import cast
 
@@ -278,7 +279,8 @@ def main() -> None:
         ("Part 1", "inputs/day20_full.txt", part1, 817896682),
         ("Part 2", "inputs/day20_full.txt", part2, 250924073918341),
     ):
-        with open(filename) as f:
+        path = Path(__file__).parent / filename
+        with open(path) as f:
             contents = f.read()
 
         t1 = time()

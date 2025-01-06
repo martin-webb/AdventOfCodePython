@@ -1,5 +1,6 @@
 from collections import deque
 from functools import partial
+from pathlib import Path
 from time import time
 
 YEAR = 2024
@@ -91,7 +92,8 @@ def main() -> None:
         ("Part 2", "inputs/day18_full.txt",
          partial(part2, size=(71, 71)), "45,18"),
     ):
-        with open(filename) as f:
+        path = Path(__file__).parent / filename
+        with open(path) as f:
             contents = f.read()
 
         t1 = time()

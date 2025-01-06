@@ -1,4 +1,5 @@
 from collections import defaultdict, deque
+from pathlib import Path
 from time import time
 
 YEAR = 2024
@@ -63,7 +64,8 @@ def main() -> None:
         ("Part 2", "inputs/day22_part2_example.txt", part2, 23),
         ("Part 2", "inputs/day22_full.txt", part2, 2130),
     ):
-        with open(filename) as f:
+        path = Path(__file__).parent / filename
+        with open(path) as f:
             contents = f.read()
 
         t1 = time()

@@ -1,3 +1,4 @@
+from pathlib import Path
 from time import time
 from typing import Generator, Optional
 
@@ -160,7 +161,8 @@ def main() -> None:
         ("Part 2", "inputs/day13_full.txt", part2, 23479),
     ):
 
-        with open(filename) as f:
+        path = Path(__file__).parent / filename
+        with open(path) as f:
             contents = f.read()
 
         t1 = time()

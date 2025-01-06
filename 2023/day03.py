@@ -1,5 +1,6 @@
 from collections import Counter, defaultdict
 from dataclasses import dataclass, field
+from pathlib import Path
 from time import time
 from typing import Generator
 
@@ -184,7 +185,8 @@ def main() -> None:
         ("Part 2", "inputs/day03_example.txt", part2, 467835),
         ("Part 2", "inputs/day03_full.txt", part2, 81166799),
     ):
-        with open(filename) as f:
+        path = Path(__file__).parent / filename
+        with open(path) as f:
             contents = f.read()
 
         t1 = time()

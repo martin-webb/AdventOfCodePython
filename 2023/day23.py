@@ -1,4 +1,5 @@
 from dataclasses import dataclass, field
+from pathlib import Path
 from time import time
 from typing import Optional
 
@@ -38,12 +39,6 @@ class Graph:
         if edge.begin not in self.edges:
             self.edges[edge.begin] = list()
         self.edges[edge.begin].append(edge)
-
-
-@dataclass
-class Path:
-    distance: int
-    visited: set[Point]
 
 
 def find_start_and_end_points(grid: dict[Point, str]) -> tuple[Point, Point]:
@@ -340,7 +335,8 @@ def main() -> None:
         ("Part 2", "inputs/day23_example.txt", part2, 154),
         ("Part 2", "inputs/day23_full.txt", part2, 6710),
     ):
-        with open(filename) as f:
+        path = Path(__file__).parent / filename
+        with open(path) as f:
             contents = f.read()
 
         t1 = time()

@@ -1,4 +1,5 @@
 from copy import copy
+from pathlib import Path
 from time import time
 
 YEAR = 2023
@@ -290,7 +291,8 @@ def main() -> None:
         ("Part 2", "inputs/day10_part2_example4.txt", part2, 10),
         ("Part 2", "inputs/day10_full.txt", part2, 491),
     ):
-        with open(filename) as f:
+        path = Path(__file__).parent / filename
+        with open(path) as f:
             contents = f.read()
 
         t1 = time()
