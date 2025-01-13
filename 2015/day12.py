@@ -59,6 +59,9 @@ def main() -> None:
               if expected and result == expected and "_full" in filename
               else "")
 
+        if expected is not None:
+            assert result == expected
+
 
 if __name__ == "__main__":
     main()
