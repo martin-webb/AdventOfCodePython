@@ -169,7 +169,7 @@ def main() -> None:
               else "")
 
         if expected is not None:
-            assert result == expected, f"difference: {abs(result-expected)}"
+            assert result == expected
 
 
 if __name__ == "__main__":
